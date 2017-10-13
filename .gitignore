@@ -1,0 +1,8 @@
+/node_modules
+/public/hot
+/vendor
+/logs
+npm-debug.log
+.env
+*~
+*.swp

@@ -1,0 +1,23 @@
+{
+  "name": "newScrapper",
+  "version": "2.0",
+  "require": {
+    "php": ">=5.4.0",
+    "monolog/monolog": "^1.22",
+    "electrolinux/phpquery": "^0.9.6",
+    "guzzlehttp/guzzle": "^6.3",
+    "fabpot/goutte": "^3.2",
+    "vlucas/phpdotenv": "^2.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "MT4\\": "src/"
+    },
+    "files": [
+      "include/Config.php",
+      "include/Logger.php",
+      "include/Db.php",
+      "include/functions.php"
+    ]
+  }
+}
