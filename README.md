@@ -10,7 +10,7 @@ run
 
 ```# composer install```
 
-Then check the start.php file for examples as a starting point
+Then check the ```start.php``` file for examples as a starting point
 
 
 
