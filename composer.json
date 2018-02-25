@@ -17,7 +17,10 @@
       "include/Config.php",
       "include/Logger.php",
       "include/Db.php",
-      "include/functions.php"
+      "include/functions.php",
+      "include/scrappers/Sunbiz.php",
+      "include/scrappers/Miamidade.php",
+      "include/scrappers/Google.php"
     ]
   }
 }
