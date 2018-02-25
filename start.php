@@ -1,6 +1,11 @@
 <?php
 
 require_once( 'vendor/autoload.php' );
+$url   = 'http://manuscript.ge/kontaqti/';
+$email = Website::checkForEmail( $url );
+if( $email )
+  die( $email );
+die( 'no' );
 
 $search = 'EL BRINCO 02 LLC contact info';
 $google = new Google( );
