@@ -1,6 +1,13 @@
 <?php
-
 require_once( 'vendor/autoload.php' );
+require_once( 'pdf2text.php' );
+
+$pdf  =  new PdfToText ( 'pdf-with-email.pdf' ) ;
+$email = checkForEmail( $pdf->Text );
+if( $email )
+  die( $email );
+exit;
+
 $url   = 'http://manuscript.ge/kontaqti/';
 $email = Website::checkForEmail( $url );
 if( $email )

@@ -64,7 +64,7 @@ class Sunbiz {
       $regex = '/(?<email>[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4})/i';
 
       if( preg_match_all( $regex, $text, $matches, PREG_PATTERN_ORDER ) )
-        $this->email = ( isset( $matches['email'] ) && !empty( $matches['email'] ) ) ? $matches['email'][0] : '';
+        $this->email = $matches['email'][0];
   }
   public function getAgentName( )
   {
